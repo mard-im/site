@@ -6,12 +6,12 @@
 	}
 
 	#menu.scrolldown {
-		width: 760px;
+		width: 720px;
 	}
 
 	#menu {
 		width: 100%;
-		max-width: 760px;
+		max-width: 720px;
 	}
 
 	.post {
@@ -19,9 +19,7 @@
 		max-width: 1100px;
 	}
 	
-	#menu ul {
-		margin-left: -36px;
-	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -47,6 +45,7 @@
 
 @media screen and (max-width: 550px) {
 	#title {
+		margin-top: 350px;
 		margin-bottom: 20px;
 	}
 
@@ -88,6 +87,25 @@
 	#menu ul li:first-child {
 		border-bottom-left-radius: 0px;
 		border-top-left-radius: 0px;
+	}
+
+	#fwslider {
+		display: none;
+	}
+
+	#blockmenu {
+		display: block;
+		background: transparent;
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		max-width: 360px;
+		
+
+	}
+
+	header {
+		height: 350px;
 	}
 
 
