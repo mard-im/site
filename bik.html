@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+<title>Быки и коровы</title>
+</head>
+<body>
+<h1>Игра "Быки и коровы"</h1>
+<script>
+var h=0;	//Ходы
+do {
+	var rand=Math.random()*(9876-123)+123;
+	rand=Math.floor(rand);
+	if (rand<1234) rand="0"+rand;
+	else if (rand>=1234) rand=rand+"";
+	
+	
+}
+while  (!((rand[0]!==rand[1]) && (rand[0]!==rand[2]) && (rand[0]!==rand[3]) && (rand[1]!==rand[2]) && (rand[1]!==rand[3]) && (rand[2]!==rand[3])));			//Генерирует число
+
+do {  
+
+h++;  //+1 ход
+b=0; k=0;  //Быки и Коровы
+
+do {
+m=prompt("Введитие 4-х значиное число без повторяющихся цифр", "");
+}
+while  (!((m[0]!==m[1]) && (m[0]!==m[2]) && (m[0]!==m[3]) && (m[1]!==m[2]) && (m[1]!==m[3]) && (m[2]!==m[3]))); //Ввод 2-го числа
+
+
+	for (i=0;i<=3; i++) {
+		for (j=0;j<=3; j++) {
+			if (m[i]==rand[j]) b++;
+
+		}
+	if (m[i]==rand[i]) k++;
+	}	//Проверка
+	
+	b=b-k;
+	
+	document.write (m+" Б="+b+" К="+k+" Ходов: "+h+"<br><br>"); //Вывод
+} while (rand!==m);  
+if (rand==m) document.write ("Победа!!! Ваше число ", rand); 
+
+</script>
+</body>
+</html>
