@@ -8,9 +8,94 @@ var title1=755;
 		
 		
 		$(document).ready(function(){
+/*open title*/
+		$('.post p').hide();
+
+
+
+			$('#dis1 h1').click(function(){
+				$('#dis1 p').slideToggle(1000);
+			});
+
+
+
+			$('#dis2 h1').click(function(){
+				$('#dis2 p').slideToggle(1000);
+			});
+
+
+
+			$('#dis3 h1').click(function(){
+				$('#dis3 p').slideToggle(1000);
+			});
+
+
+
+
+			$('#dis1 img').click(function(){
+				$('#dis1 p').slideToggle(1000);
+			});
 
 			
-	
+
+			$('#dis2 img').click(function(){
+				$('#dis2 p').slideToggle(1000);
+			});
+
+
+
+			$('#dis3 img').click(function(){
+				$('#dis3 p').slideToggle(1000);
+			});
+
+
+
+/*numbers page*/
+
+	$('#page2, #page3, #page4').hide();
+
+	$('#one').click(function(){
+		$('body,html').animate({scrollTop:0},800, function(){
+			$('#page2, #page3, #page4').hide();
+			$('#page1').fadeIn(1000);
+			document.title = "Главная";
+		});
+	});
+
+
+
+	$('#two').click(function(){
+		$('body,html').animate({scrollTop:0},800, function(){
+			$('#page1, #page3, #page4').hide();
+			$('#page2').fadeIn(1000);
+			document.title = "Категории";
+		});
+	});
+
+
+
+	$('#three').click(function(){
+		$('body,html').animate({scrollTop:0},800, function(){
+			$('#page1, #page2, #page4').hide();
+			$('#page3').fadeIn(1000);
+			document.title = "Все статьи";
+		});
+	});
+
+
+
+	$('#four').click(function(){
+		$('body,html').animate({scrollTop:0},800, function(){
+			$('#page1, #page2, #page3').hide();
+			$('#page4').fadeIn(1000);
+			document.title = "Галерея";
+		});
+	});
+
+
+
+
+												/*hide slider*/
 			$('#buthidehead').click(function(){
 				$("header").slideToggle(1000, 
 					function(){
@@ -31,37 +116,14 @@ var title1=755;
 
 								
 						}						
-					
-	
+						
 
 					});
 
-
-					
-					
 
 
 			});
 
-			
-			
-			
-					$(".post p").hide();
-					$("#dis1 h1").click(function(){
-						$("#dis1 p").slideToggle(1000);
-					});
-			
-					$("#dis2 h1").click(function(){
-						$("#dis2 p").slideToggle(1000);
-					});
-
-
-
-					$("#dis3 h1").click(function(){
-						$("#dis3 p").slideToggle(1000);
-					});					
-			
-			
 			$('#text0').click(function(){
 				$('body,html').animate({scrollTop:0},800);
 			});
@@ -79,10 +141,16 @@ var title1=755;
 			});
 
 
-	
 
 
-});
+					$('.link').click(function(){
+						$('.link').css({'display': 'none'});
+						$('.spoiler').css({'display': 'block'});
+					});
+
+
+
+});//document ready end
 
 
 
@@ -141,4 +209,18 @@ $(window).scroll(function() {
 				$('#text2').removeClass('active');
 				$('#text3').addClass('active');
 			}
+
+			/*if ($(this).scrollTop() < 30){
+				$('body,html').animate({scrollTop:31},100)
+			}
+
+			if ($(this).scrollTop() = 31){
+				$('body,html').stop();
+			}
+
+			*/
 });
+
+
+
+
