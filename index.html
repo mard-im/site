@@ -16,6 +16,15 @@
 	<link rel="stylesheet" type="text/css" href="css/media.css">	
 	<script src="js/index.js"></script>
 
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
 </head>
 <body>
 <header>
@@ -24,72 +33,25 @@
 
 
 
-<div id="fwslider">
-		<div class="slider_container">
-
-
-
-
-		<div class="slide"> 
-			<img src="img/1.jpg">
-				<div class="slide_content">
-					<div class="slide_content_wrap">
-						<h4 class="title">Главная</h4>
-						<p class="description">Главная страница с описанием сайта</p>
-						<a class="readmore" href="index.html">Перейти</a>
-					</div>
-				</div>
-		</div>
-
-
-		</div><!--slide-->
-
-
-		<div class="slide">
-			<img src="img/3.jpg">
-				<div class="slide_content">
-					<div class="slide_content_wrap">
-						<h4 class="title">Категории</h4>
-						<p class="description">Статьи по разделам</p>
-						<a class="readmore" href="categories.html">Перейти</a>
-					</div>
-				</div>
-		</div><!--/slide -->
-
-
-		<div class="slide">
-			<img src="img/2.jpg">
-				<div class="slide_content">
-					<div class="slide_content_wrap">
-						<h4 class="title">Статьи</h4>
-						<p class="description">Статьи, размещённые на сайте</p>
-						<a class="readmore" href="post.html">Перейти</a>
-					</div>
-				</div>
-		</div><!--/slide -->
-
-
-
-
-
-
-		<div class="slide">
-			<img src="img/4.jpg">
-				<div class="slide_content">
-					<div class="slide_content_wrap">
-						<h4 class="title">Галерея</h4>
-						<p class="description">Галерея изображений</p>
-						<a class="readmore" href="gallery.html">Перейти</a>
-					</div>
-				</div>
-		</div><!--/slide -->
-
-
-		<!--left/right-->
-				<div class="timers"></div>
-				<div class="slidePrev"><span></span></div>
-				<div class="slideNext"  onclick = "changeBg(1)"><span></span></div>	
-</div> 
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+		<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/3.jpg" alt="jquery slideshow" title="3" id="wows1_2"/></a></li>
+		<li><img src="data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>1</span></a>
+		<a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>2</span></a>
+		<a href="#" title="3"><span><img src="data1/tooltips/3.jpg" alt="3"/>3</span></a>
+		<a href="#" title="4"><span><img src="data1/tooltips/4.jpg" alt="4"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wordpress slider</a> by WOWSlider.com v7.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
 
 
 </header>
@@ -124,7 +86,7 @@
 	</ul>
 </div>
 
-
+<div id="post-wrapper">
 
 <div class="post" id="dis1">
 
@@ -158,6 +120,8 @@
 </div>
 
 
+
+</div>
 </div>
 
 

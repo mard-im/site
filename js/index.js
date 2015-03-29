@@ -1,6 +1,6 @@
-var scroll1=100;
-var sl=0;
-var title1=435;
+var scroll1=460;
+var sl=1;
+var title1=755;
 		
 
 
@@ -9,7 +9,7 @@ var title1=435;
 		
 		$(document).ready(function(){
 
-			$("header").hide();
+			
 	
 			$('#buthidehead').click(function(){
 				$("header").slideToggle(1000, 
@@ -18,7 +18,7 @@ var title1=435;
 							$('#buthidehead').css('backgroundImage', 'url(img/button/down.png)');
 							sl=0;
 							scroll1=100;
-							title1=title1-600;
+							title1=title1-360;
 
 						}
 
@@ -26,19 +26,42 @@ var title1=435;
 							
 							$('#buthidehead').css('backgroundImage', 'url(img/button/up.png)');
 							sl=1;
-							scroll1=700;
-							title1=title1+600;
+							scroll1=460;
+							title1=title1+360;
 
 								
 						}						
-						
+					
+	
 
 					});
 
 
+					
+					
+
 
 			});
 
+			
+			
+			
+					$(".post p").hide();
+					$("#dis1 h1").click(function(){
+						$("#dis1 p").slideToggle(1000);
+					});
+			
+					$("#dis2 h1").click(function(){
+						$("#dis2 p").slideToggle(1000);
+					});
+
+
+
+					$("#dis3 h1").click(function(){
+						$("#dis3 p").slideToggle(1000);
+					});					
+			
+			
 			$('#text0').click(function(){
 				$('body,html').animate({scrollTop:0},800);
 			});
@@ -91,6 +114,7 @@ $(window).scroll(function() {
 
 			if ($(this).scrollTop() > title1){
 				$('#postfull #titlename').addClass("fixed");
+
 			}
 
 			else {
